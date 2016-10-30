@@ -11,14 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161029182259) do
+ActiveRecord::Schema.define(version: 20161030004848) do
 
   create_table "doctors", force: :cascade do |t|
     t.string   "first_name"
     t.string   "last_name"
     t.integer  "license_no"
     t.string   "email"
-    t.integer  "phone_number"
+    t.string  "phone_number"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
   end
@@ -27,10 +27,13 @@ ActiveRecord::Schema.define(version: 20161029182259) do
     t.string   "first_name"
     t.string   "last_name"
     t.string   "email"
-    t.integer  "phone_number"
+    t.string  "phone_number"
+    t.string   "dorctor_name"
     t.integer  "doctor_id"
+    t.string   "doctor_name"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
+ 
   end
 
 end
