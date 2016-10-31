@@ -5,7 +5,7 @@ class CreatePatients < ActiveRecord::Migration
       t.string :last_name
       t.string :email
       t.string :phone_number
-      t.string :doctor_id
+      t.integer :doctor_id
 
       t.timestamps null: false
     end
